@@ -44,17 +44,28 @@ h1 {
   height: 15rem;
 }
 
+.correct a:hover,
+.correct a:focus {
+  text-decoration: underline;
+}
 .correct .btn-primary:focus, .correct .btn-primary:focus-visible {
   background-color: #047413;
 }
 
-.wrong .btn-primary:focus, .wrong .btn-primary:focus-visible {
-  background-color: #a30000;
+.wrong a:hover,
+.wrong a:focus {
+  text-decoration: none;
+  outline: none;
 }
-
-a:hover,
-a:focus {
-  text-decoration: underline;
+.wrong a {
+  border-bottom: none;
+}
+.wrong .btn-primary:focus, .wrong .btn-primary:focus-visible, .wrong .btn-primary:hover {
+  background-color: #4e5b73;
+  border-color: #4e5b73;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
